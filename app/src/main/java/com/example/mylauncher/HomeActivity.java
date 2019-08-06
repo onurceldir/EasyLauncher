@@ -103,10 +103,11 @@ public class HomeActivity extends AppCompatActivity {
         }
         return super.onKeyDown(keyCode, event);
     }
-    --This function disables back button(higher api level 2.0) in home activity. I switched this code because it is simple and newer.
+    --This function disables back button(higher api level 2.0) in home activity. I switched this code because it is simple and newer!.
     */
     @Override
     public void onBackPressed() {}
+
 
 
 }

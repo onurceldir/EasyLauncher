@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/settingsButton"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity"
+    android:background="#000000">
+
+
+    <ImageButton
+        android:id="@+id/whatsappFigure"
+        android:layout_width="135dp"
+        android:layout_height="135dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginBottom="20dp"
+        android:onClick="onWhatsappButtonClick"
+        android:padding="0dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/whatsapp_icon"
+        app:layout_constraintBottom_toTopOf="@+id/classroomFigure"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/browserFigure"
+        android:layout_width="135dp"
+        android:layout_height="135dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        android:onClick="onBrowserButtonClick"
+        android:padding="0dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/chrome_icon"
+        app:layout_constraintBottom_toTopOf="@+id/watchFigure"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/whatsappFigure" />
+
+    <ImageButton
+        android:id="@+id/classroomFigure"
+        android:layout_width="135dp"
+        android:layout_height="135dp"
+        android:layout_marginBottom="24dp"
+        android:onClick="onClassroomButtonClick"
+        android:padding="0dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/book_icon"
+        app:layout_constraintBottom_toTopOf="@+id/searchFigure"
+        app:layout_constraintStart_toStartOf="@+id/whatsappFigure" />
+
+    <ImageButton
+        android:id="@+id/watchFigure"
+        android:layout_width="135dp"
+        android:layout_height="135dp"
+        android:layout_marginBottom="20dp"
+        android:onClick="onClockButtonClick"
+        android:padding="0dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/stopwatch_icon"
+        app:layout_constraintBottom_toTopOf="@+id/mailFigure"
+        app:layout_constraintStart_toStartOf="@+id/browserFigure" />
+
+    <ImageButton
+        android:id="@+id/searchFigure"
+        android:layout_width="135dp"
+        android:layout_height="135dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="52dp"
+        android:onClick="onSearchButtonClick"
+        android:padding="0dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/search_icon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/classroomFigure" />
+
+    <ImageButton
+        android:id="@+id/mailFigure"
+        android:layout_width="135dp"
+        android:layout_height="135dp"
+        android:layout_marginBottom="60dp"
+        android:onClick="onMailButtonClick"
+        android:padding="0dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/gmail_icon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/watchFigure" />
+
+    <Button
+        android:id="@+id/settingButton"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@null"
+        android:fontFamily="@font/pixelart"
+        android:onClick="onSettingButtonClick"
+        android:text="Settıngs"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/dialerButton"
+        android:layout_width="110dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@null"
+        android:fontFamily="@font/pixelart"
+        android:onClick="onDialerButtonClick"
+        android:text="DIALER"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/text_date_display"
+        android:layout_width="234dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/pixelart"
+        android:text="text_date"
+        android:textColor="#ffffffff"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/whatsappFigure"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

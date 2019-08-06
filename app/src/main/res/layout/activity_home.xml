@@ -9,6 +9,7 @@
     android:background="#000000">
 
 
+    <!--This is ImageButton(TEST) -->
     <ImageButton
         android:id="@+id/whatsappFigure"
         android:layout_width="135dp"

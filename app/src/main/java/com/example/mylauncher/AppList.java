@@ -22,3 +22,4 @@ class AppList {
     public String getPackage(){ return package_path;}
 
 }
+

@@ -6,4 +6,4 @@ Specifications:
 - No notifications
 - simple interface
 - Time spent in the app alert
-- Optional call reject
+- Optional auto call reject
